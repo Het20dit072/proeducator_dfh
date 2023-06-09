@@ -322,7 +322,7 @@ class _HomeScreenState extends State<HomeScreen> {
               break;
             case 1:
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ChatScreen()));
+                  MaterialPageRoute(builder: (context) => ChatBotApp()));
               // Navigate to ChatScreen
               break;
             case 2:

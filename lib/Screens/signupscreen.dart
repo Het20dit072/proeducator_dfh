@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:proeducator/Screens/homescreen.dart';
-import 'package:proeducator/Screens/loginscreen.dart';
 
 class SignUpscreen extends StatelessWidget {
   @override
