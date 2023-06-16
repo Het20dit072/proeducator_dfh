@@ -5,8 +5,6 @@ import 'package:proeducator/Screens/homescreen.dart';
 import 'profile.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({super.key});
-
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
@@ -24,11 +22,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Text("Chat Screen"),
+        child: Text("Chat Screen"),
       ),
-
-
-  bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
         elevation: 0.0,
         backgroundColor: Colors.white,
         currentIndex: _currentIndex,

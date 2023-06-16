@@ -6,7 +6,6 @@ import 'package:proeducator/Screens/dashboard.dart';
 import 'package:proeducator/Screens/homescreen.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
