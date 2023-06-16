@@ -13,14 +13,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController(initialPage: 0);
   int _currentPage = 0;
 
-  List<Widget> _buildPageIndicator() {
-    List<Widget> list = [];
-    for (int i = 0; i < _numPages; i++) {
-      list.add(i == _currentPage ? _indicator(true) : _indicator(false));
-    }
-    return list;
-  }
-
   Widget _indicator(bool isActive) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 150),
@@ -349,41 +341,38 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       ),
       bottomSheet: _currentPage == _numPages - 1
           ? Container(
-          
-              
               child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 35, vertical: 30),
-                child: Flexible(
-                  child: Container(
-                    width: MediaQuery.of(context).size.width / 1.3,
-                    height: (MediaQuery.of(context).size.height / 8.2) - 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      gradient: LinearGradient(colors: [
-                        Color(0xffFF9900),
-                        Color(0xffEBFB8D),
-                      ]),
-                    ),
-                    child: MaterialButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (builder) => LoginScreen()));
-                      },
-                      child: Center(
-                        child: Text(
-                          "Get Started",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        ),
+              padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 30),
+              child: Flexible(
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 1.3,
+                  height: (MediaQuery.of(context).size.height / 8.2) - 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    gradient: LinearGradient(colors: [
+                      Color(0xffFF9900),
+                      Color(0xffEBFB8D),
+                    ]),
+                  ),
+                  child: MaterialButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (builder) => LoginScreen()));
+                    },
+                    child: Center(
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                   ),
                 ),
-              ))
+              ),
+            ))
           : Text(''),
     );
   }
