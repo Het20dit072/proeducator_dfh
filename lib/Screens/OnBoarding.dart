@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:proeducator/Screens/loginscreen.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -13,7 +13,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController(initialPage: 0);
   int _currentPage = 0;
 
- 
   void _goToNextPage() {
     if (_currentPage < _numPages - 1) {
       setState(() {
@@ -68,35 +67,34 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               children: [
                                 TextSpan(
                                   text: 'your ',
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                      color: Colors.black,
-                                      fontSize:
-                                          30, // Adjust the font size as needed
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.black,
+                                    fontSize:
+                                        30, // Adjust the font size as needed
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 TextSpan(
                                   text: 'Study',
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                      color: Colors.yellow,
-                                      fontSize:
-                                          30, // Adjust the font size as needed
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+
+                                    color: Colors.yellow,
+                                    fontSize:
+                                        30, // Adjust the font size as needed
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 TextSpan(
                                   text: ' Abroad Expert',
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                      color: Colors.yellow,
-                                      fontSize:
-                                          30, // Adjust the font size as needed
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+
+                                    color: Colors.yellow,
+                                    fontSize:
+                                        30, // Adjust the font size as needed
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ],
@@ -207,6 +205,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   Text(
                                     'Explore Top Destinations',
                                     style: TextStyle(
+                                        fontFamily: 'Poppins',
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20.5),
                                   ),
@@ -220,6 +219,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                           'We have partnered with Universities , agencies and counsellors over 27+ countries to provide what best we can, for you',
                                           textAlign: TextAlign.justify,
                                           style: TextStyle(
+                                            fontFamily: 'Poppins',
                                             color: Colors.grey,
                                             fontSize: 14,
                                           ),
@@ -251,6 +251,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   Text(
                                     'Discover Top Universities',
                                     style: TextStyle(
+                                        fontFamily: 'Poppins',
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20),
                                   ),
@@ -264,7 +265,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                           'We have partnered with various universities,agencies, counsellors and others to provide the best university for you.,',
                                           textAlign: TextAlign.justify,
                                           style: TextStyle(
-                                              fontSize: 15, color: Colors.grey),
+                                              fontFamily: 'Poppins',
+                                              fontSize: 15,
+                                              color: Colors.grey),
                                         ),
                                       ],
                                     ),
@@ -293,6 +296,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   Text(
                                     'Qualified Counsellors and Free Consultation',
                                     style: TextStyle(
+                                        fontFamily: 'Poppins',
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20),
                                   ),
@@ -306,6 +310,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                           'We are British Council Certified Study Abroad Experts.You may avail free consultation to get admission in your dream university',
                                           textAlign: TextAlign.justify,
                                           style: TextStyle(
+                                            fontFamily: 'Poppins',
                                             color: Colors.grey,
                                             fontSize: 15,
                                           ),
@@ -353,7 +358,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       child: Text(
                         "Get Started",
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            fontFamily: 'Poppins',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       ),
                     ),

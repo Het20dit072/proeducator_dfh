@@ -65,12 +65,13 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: 10),
               Text(
                 "Your Study Abroad Expert",
-                style: TextStyle(fontSize: 29, color: Colors.orange),
+                style: TextStyle(
+                    fontFamily: 'Poppins', fontSize: 29, color: Colors.orange),
               ),
               SizedBox(height: 30),
               Text(
                 "British Council Certified Study Abroad Agent. We are obsessed with your success.",
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontFamily: 'Poppins', fontSize: 18),
                 textAlign: TextAlign.justify,
               ),
               SizedBox(height: 30),
@@ -94,6 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Text(
                           "Register for webinar",
                           style: TextStyle(
+                            fontFamily: 'Poppins',
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
                           ),
@@ -121,6 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Text(
                           "Talk to an Expert",
                           style: TextStyle(
+                            fontFamily: 'Poppins',
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
                           ),
@@ -144,6 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         "Explore Top Study",
                         textAlign: TextAlign.center,
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
@@ -159,6 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         " Destination",
                         textAlign: TextAlign.center,
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
@@ -174,6 +179,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                   "We have partnered with Universities, agencies, counsellors over 27+ countries to provide what best we can, for you",
                   style: TextStyle(
+                    fontFamily: 'Poppins',
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
@@ -218,6 +224,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         "Our Services",
                         textAlign: TextAlign.center,
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
@@ -234,6 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   "Your adventure starts here. We offer these services to help you get admitted to your dream university.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontFamily: 'Poppins',
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
@@ -287,13 +295,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         Text(
                           upperlabel,
                           style: TextStyle(
-                              fontSize: 12, fontWeight: FontWeight.w500),
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500),
                         ),
                         SizedBox(height: 8),
                         Text(
                           bellowlabel,
                           style: TextStyle(
-                              fontSize: 12, fontWeight: FontWeight.w500),
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500),
                         ),
                       ],
                     ),

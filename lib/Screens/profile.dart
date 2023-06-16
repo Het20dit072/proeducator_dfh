@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:proeducator/Screens/chatScreen.dart';
 
 import 'package:proeducator/Screens/dashboard.dart';
 import 'package:proeducator/Screens/homescreen.dart';
 
 class ProfileScreen extends StatefulWidget {
-
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
 }
@@ -69,8 +67,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   Text(
                     "Prachi Shah",
-                    style: GoogleFonts.poppins(
-                        fontSize: 20, fontWeight: FontWeight.w500),
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(
                     width: width / 3,
@@ -102,7 +102,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Image.asset("assets/documents.png"),
                       Text(
                         "Documents",
-                        style: GoogleFonts.poppins(
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 20,
                         ),
                       ),
@@ -130,7 +131,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Image.asset("assets/messages.png"),
                       Text(
                         "Give Us Feedback",
-                        style: GoogleFonts.poppins(
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 20,
                         ),
                       ),
@@ -158,7 +160,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Image.asset("assets/settings.png"),
                       Text(
                         "Settings",
-                        style: GoogleFonts.poppins(
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 20,
                         ),
                       ),
@@ -180,7 +183,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Text(
               "LEGAL",
-              style: GoogleFonts.poppins(fontSize: 25),
+              style: TextStyle(fontFamily: 'Poppins', fontSize: 25),
             ),
           ),
           SizedBox(
@@ -205,7 +208,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Image.asset("assets/terms_of_sevices.png"),
                       Text(
                         "Terms Of Services",
-                        style: GoogleFonts.poppins(
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 20,
                         ),
                       ),
@@ -234,7 +238,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Image.asset("assets/privacy_policy.png"),
                       Text(
                         "Privacy Policy",
-                        style: GoogleFonts.poppins(
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontSize: 20,
                         ),
                       ),
@@ -266,7 +271,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   Text(
                     "Logout",
-                    style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontFamily: 'Poppins', fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
                     width: 10,

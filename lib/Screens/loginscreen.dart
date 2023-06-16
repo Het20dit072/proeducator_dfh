@@ -36,19 +36,19 @@ class LoginScreen extends StatelessWidget {
                   Text(
                     'Welcome',
                     style: TextStyle(
+                      fontFamily: 'Poppins',
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
-                      fontFamily: 'Poppins',
                     ),
                     textAlign: TextAlign.left,
                   ),
                   Text(
                     'Please sign-in to your account and start the adventure',
                     style: TextStyle(
+                      fontFamily: 'Poppins',
                       fontSize: 12,
                       color: Colors.black,
-                      fontFamily: 'Poppins',
                     ),
                     textAlign: TextAlign.left,
                   ),
@@ -73,9 +73,9 @@ class LoginScreen extends StatelessWidget {
                       contentPadding: EdgeInsets.symmetric(horizontal: 16),
                     ),
                     style: TextStyle(
+                      fontFamily: 'Poppins',
                       fontSize: 14,
                       color: Color(0x6C6868),
-                      fontFamily: 'Poppins',
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -100,9 +100,9 @@ class LoginScreen extends StatelessWidget {
                       contentPadding: EdgeInsets.symmetric(horizontal: 16),
                     ),
                     style: TextStyle(
+                      fontFamily: 'Poppins',
                       fontSize: 14,
                       color: Color(0x6C6868),
-                      fontFamily: 'Poppins',
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -123,14 +123,18 @@ class LoginScreen extends StatelessWidget {
                 ),
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (builder) => SignUpscreen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (builder) => SignUpscreen()));
                   },
                   child: Center(
                     child: Text(
                       "Get Started",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -149,6 +153,7 @@ class LoginScreen extends StatelessWidget {
                   Text(
                     "Create Accounnt",
                     style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontWeight: FontWeight.bold,
                         decoration: TextDecoration.underline),
                   )

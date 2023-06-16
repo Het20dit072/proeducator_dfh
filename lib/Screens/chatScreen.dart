@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:proeducator/Screens/dashboard.dart';
 import 'package:proeducator/Screens/homescreen.dart';
 
@@ -148,8 +147,10 @@ class _ChatScreenState extends State<ChatScreen> {
               children: [
                 Text(
                   "ProeducatorChatBot",
-                  style: GoogleFonts.poppins(
-                      fontSize: 14, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold),
                 ),
                 Icon(Icons.call)
               ],
@@ -238,7 +239,7 @@ class ChatMessage extends StatelessWidget {
               children: [
                 Text(
                   text,
-                  style: TextStyle(fontSize: 16.0),
+                  style: TextStyle(fontFamily: 'Poppins', fontSize: 16.0),
                 ),
               ],
             ),
@@ -248,6 +249,7 @@ class ChatMessage extends StatelessWidget {
             sentTime.substring(
                 sentTime.indexOf(' ') + 1, sentTime.lastIndexOf(':')),
             style: TextStyle(
+              fontFamily: 'Poppins',
               fontSize: 12.0,
               color: Colors.grey[500],
             ),

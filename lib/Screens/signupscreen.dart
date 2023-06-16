@@ -45,19 +45,19 @@ class SignUpscreen extends StatelessWidget {
                     Text(
                       'Welcome',
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
-                        fontFamily: 'Poppins',
                       ),
                       textAlign: TextAlign.left,
                     ),
                     Text(
                       'Please sign-up to your account and start the adventure',
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 12,
                         color: Colors.black,
-                        fontFamily: 'Poppins',
                       ),
                       textAlign: TextAlign.left,
                     ),
@@ -82,9 +82,9 @@ class SignUpscreen extends StatelessWidget {
                         contentPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 14,
                         color: Color(0x6C6868),
-                        fontFamily: 'Poppins',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -109,9 +109,9 @@ class SignUpscreen extends StatelessWidget {
                         contentPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 14,
                         color: Color(0x6C6868),
-                        fontFamily: 'Poppins',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -136,9 +136,9 @@ class SignUpscreen extends StatelessWidget {
                         contentPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 14,
                         color: Color(0x6C6868),
-                        fontFamily: 'Poppins',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -163,9 +163,9 @@ class SignUpscreen extends StatelessWidget {
                         contentPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 14,
                         color: Color(0x6C6868),
-                        fontFamily: 'Poppins',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -195,7 +195,9 @@ class SignUpscreen extends StatelessWidget {
                       child: Text(
                         "Get Started",
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            fontFamily: 'Poppins',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -214,6 +216,7 @@ class SignUpscreen extends StatelessWidget {
                     Text(
                       "Sign-In Instead",
                       style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline),
                     )
